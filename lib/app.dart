@@ -13,8 +13,8 @@ class App extends StatelessWidget {
         color: ProjectColor.black,
         debugShowCheckedModeBanner: false,
         routes: {
-          Screen0.routeName: (context) => const Screen0(),
-          Screen1.routeName: (context) => const Screen1(),
+          Screen0.routeName: (context) => Screen0(),
+          Screen1.routeName: (context) =>  Screen1(),
           Screen2.routeName: (context) => const Screen2(),
         },
         pageRouteBuilder: _pageRouteBuilder,

@@ -4,11 +4,13 @@ import 'dart:math';
 import 'package:flutter/foundation.dart';
 
 abstract class BaseItemsProvider extends ChangeNotifier {
+
   BaseItemsProvider() {
     _runAutoUpdates();
   }
 
   Timer _timer;
+
   List<String> _items = const [];
 
   int get itemsCount => _items.length;
@@ -55,4 +57,5 @@ abstract class BaseItemsProvider extends ChangeNotifier {
 
     notifyListeners();
   }
+
 }
